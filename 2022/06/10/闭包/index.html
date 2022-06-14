@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>mkzpのbol</title>
+  <title>闭包相关 | mkzpのbol</title>
   <meta name="author" content="zp" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,14 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="js, 闭包, 面试常问" />
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="mkzpのbol">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="有危险Σ(っ °Д °;)っ    ##什么是闭包    有权访问另一个函数作用域中变量的函数，被访问局部变量的函数为闭包函数  ##闭包注意     循环注册点击事件（ul&gt;li*4）     (function(){})立即执行函数     要记住Σ(っ °Д °;)っ      如果直接取i的值会出现点击后所有值都是4，索引号最大为3，因为i++后才会输出var lis &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="闭包相关">
+<meta property="og:url" content="http://example.com/2022/06/10/%E9%97%AD%E5%8C%85/index.html">
 <meta property="og:site_name" content="mkzpのbol">
+<meta property="og:description" content="有危险Σ(っ °Д °;)っ    ##什么是闭包    有权访问另一个函数作用域中变量的函数，被访问局部变量的函数为闭包函数  ##闭包注意     循环注册点击事件（ul&gt;li*4）     (function(){})立即执行函数     要记住Σ(っ °Д °;)っ      如果直接取i的值会出现点击后所有值都是4，索引号最大为3，因为i++后才会输出var lis &#x3D;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-10T07:31:36.000Z">
+<meta property="article:modified_time" content="2022-06-14T11:53:33.380Z">
 <meta property="article:author" content="zp">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="闭包">
+<meta property="article:tag" content="面试常问">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -121,211 +128,159 @@
 
         
 
-            <!-- Breadcrumb for tag & category page -->
-
-
-
-
+            <article itemscope itemtype="https://schema.org/Article">
     
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/10/%E9%97%AD%E5%8C%85/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">闭包相关</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-06-10T07:31:36.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-06-10</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">zp</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        380
+                    
+                    字
+                </li>
                 
-                    <div class="pin-top wrapper">
-                        <div class="pin-top inner"></div>
-                    </div>
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1655207613380"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            <hr />
+            <div itemprop="articleBody"><div class="alert alert-danger"><div class="icon"><i class="fa fa-exclamation"></i></div><div class="text"><p>有危险Σ(っ °Д °;)っ</p>
+</div></div>
+
+<hr>
+<p>##什么是闭包<br>    有权访问另一个函数作用域中变量的函数，被访问局部变量的函数为闭包函数 </p>
+<p>##闭包注意<br>     循环注册点击事件（ul&gt;li*4）<br>     (function(){})立即执行函数<br>     <div class="alert alert-danger"><div class="icon"><i class="fa fa-exclamation"></i></div><div class="text"><p>要记住Σ(っ °Д °;)っ</p>
+</div></div><br>     如果直接取i的值会出现点击后所有值都是4，索引号最大为3，因为i++后才会输出<br>var lis &#x3D; document.querySelectorAll(‘li’)<br>for(var i &#x3D; 0 ;i&lt;lis.length;++i){<br>    (function(a){<br>        lis[i].onclick &#x3D;function(){<br>            console.log(a);<br>        }<br>    })</p>
+<p>   (i)<br>}</p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
                 
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/06/10/%E9%97%AD%E5%8C%85/">
-                        
-                            <img class="kratos-entry-thumb-new-img">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/javascript%E9%AB%98%E7%BA%A7/">javascript高级</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/06/10/%E9%97%AD%E5%8C%85/" itemprop="mainEntityOfPage"><span itemprop="name headline">闭包相关</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                有危险Σ(っ °Д °;)っ
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2022/06/10/%E9%97%AD%E5%8C%85/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2022/06/10/%E9%97%AD%E5%8C%85/";
+            const title         = "「闭包相关」";
+            const excerpt       = `有危险Σ(っ °Д °;)っ
 
 
 
 ##什么是闭包    有权访问另一个函数作用域中变量的函数，被访问局部变量的函数为闭包函数 
-##闭包注意     循环注册点击事件（ul&gt;li*4）     (function(){})立即...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-06-10T07:31:36.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-06-10</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/js/" rel="tag">js</a>, <a class="tag-none-link" href="/tags/%E9%97%AD%E5%8C%85/" rel="tag">闭包</a>, <a class="tag-none-link" href="/tags/%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE/" rel="tag">面试常问</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/06/10/%E9%97%AD%E5%8C%85/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
+##闭包注意     循环注册点击事件（ul&gt;li*4）     (function(){})立即...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
                 
-                    <div class="pin-top wrapper">
-                        <div class="pin-top inner"></div>
-                    </div>
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/06/10/js%E4%BF%AE%E6%94%B9this%E6%8C%87%E5%90%91/">
-                        
-                            <img class="kratos-entry-thumb-new-img">
-                        
-                    </a>
                 </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/javascript%E9%AB%98%E7%BA%A7/">javascript高级</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/06/10/js%E4%BF%AE%E6%94%B9this%E6%8C%87%E5%90%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">js修改this指向</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                有危险Σ(っ °Д °;)っ
-
-
-
-call()12call（），调用函数的同时会改变函数内部this指向，在子函数中调用父函数实现继承效果call（（修改的对象），参数，参数）
-
-
-
-bind()1bind()改变函数内部this指...
-                            
-                        </p>
-                    </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/js/" rel="tag">js</a>, <a class="tag-none-link" href="/tags/%E9%97%AD%E5%8C%85/" rel="tag">闭包</a>, <a class="tag-none-link" href="/tags/%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE/" rel="tag">面试常问</a>
                 </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-06-10T07:31:36.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-06-10</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/js/" rel="tag">js</a>, <a class="tag-none-link" href="/tags/%E6%98%93%E6%B7%B7/" rel="tag">易混</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/06/10/js%E4%BF%AE%E6%94%B9this%E6%8C%87%E5%90%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+                <div class="pull-date">
+                    <time datetime="2022-06-14T11:53:33.380Z" itemprop="dateModified">最后编辑：2022-06-14</time>
+                </div>
             </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/06/10/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/">
-                        
-                            <img class="kratos-entry-thumb-new-img">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/06/10/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/" itemprop="mainEntityOfPage"><span itemprop="name headline">文章标题</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                喵呼呼o(&#x3D;•ェ•&#x3D;)m
-
-成功啦o(￣▽￣)ブ
-
-有危险Σ(っ °Д °;)っ
-
-有消息(・∀・(・∀・(・∀・*)
-
-当心哦≧ ﹏ ≦
-
-
-
-
-pic : 可以指定这篇文章是否使用自定义的缩略图名称（在文章资源...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-06-10T07:31:36.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-06-10</a>
-                        </time>
-                        <a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/06/10/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
+        </footer>
     </div>
-
-
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 文章标题" href="/2022/06/10/文章标签测试/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
 
         
 
@@ -338,8 +293,6 @@ pic : 可以指定这篇文章是否使用自定义的缩略图名称（在文�
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
     
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
@@ -380,6 +333,8 @@ pic : 可以指定这篇文章是否使用自定义的缩略图名称（在文�
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
